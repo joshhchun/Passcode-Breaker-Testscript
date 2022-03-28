@@ -10,9 +10,6 @@ echo -e "Downlading python program ... \n"
 wget https://raw.githubusercontent.com/joshhchun/Passcode-Breaker-Testscript/main/test.py -q -O ./testing_script/test.py > /dev/null
 chmod +x ./testing_script/test.py
 
-
-
-
 for i in $(seq 15); do
     ./testing_script/test.py > $OUT 
     cat $OUT | tail -n 9 > $TEST
