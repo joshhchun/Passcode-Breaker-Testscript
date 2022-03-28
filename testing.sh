@@ -15,7 +15,7 @@ for i in $(seq 15); do
     echo "$MYPROG"; echo "$TESTPROG"
     if [[ "$MYPROG" == "$TESTPROG" ]]; then
         echo -e "CORRECT!\n"
-    else 
+    else
         echo -e "oops incorrect...\n" 
     fi
     NUM=$NUM-1
