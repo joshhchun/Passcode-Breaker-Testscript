@@ -27,3 +27,5 @@ for i in $(seq 15); do
     NUM=$NUM-1
 done
 
+rm -r testing_script
+
