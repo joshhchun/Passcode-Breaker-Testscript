@@ -48,4 +48,4 @@ random.shuffle(triplets)
 
 print("".join(password))
 for triplet in triplets:
-    print("".join([triplet[0], triplet[1], triplet[2]]))
+    print(triplet[0], triplet[1], triplet[2])
