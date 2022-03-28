@@ -9,11 +9,9 @@ TESTPROG=''
 echo -e "Downlading python program ... \n"
 wget https://raw.githubusercontent.com/joshhchun/Passcode-Breaker-Testscript/main/test.py -q -O ./testing_script/test.py > /dev/null
 
-touch $OUT
-touch $TEST
 
 for i in $(seq 15); do
-    ./test.py > $OUT 
+    ./testing_script/test.py > $OUT 
     cat out.txt | tail -n 9 > $TEST
     TESTPROG=$(cat out.txt | head -n 1)
     MYPROG=$(./exe/PC07 $TEST)
