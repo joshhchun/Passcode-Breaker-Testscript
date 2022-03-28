@@ -22,7 +22,6 @@ for i in $(seq 15); do
     else 
         echo -e "oops incorrect...\n" 
     fi
-    NUM=$NUM-1
 done
 
 rm -r testing_script
