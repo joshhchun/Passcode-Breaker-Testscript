@@ -10,7 +10,7 @@ for i in $(seq 15); do
     ./test.py > $OUT 
     cat out.txt | tail -n 9 > $TEST
     TESTPROG=$(cat out.txt | head -n 1)
-    MYPROG=$(./exe/PC07 $TEST | tail -n 1)
+    MYPROG=$(./exe/PC07 $TEST)
 
     echo "$MYPROG"; echo "$TESTPROG"
     if [[ "$MYPROG" == "$TESTPROG" ]]; then
