@@ -6,6 +6,10 @@ OUT="testing_script/out.txt"
 MYPROG=''
 TESTPROG=''
 
+echo -e "Downlading python program ... \n"
+wget https://raw.githubusercontent.com/joshhchun/Passcode-Breaker-Testscript/main/test.py -q -O ./testing_script/test.py > /dev/null
+
+
 for i in $(seq 15); do
     ./test.py > $OUT 
     cat out.txt | tail -n 9 > $TEST
@@ -15,9 +19,9 @@ for i in $(seq 15); do
     echo "$MYPROG"; echo "$TESTPROG"
     if [[ "$MYPROG" == "$TESTPROG" ]]; then
         echo -e "CORRECT!\n"
-    else
+    else 
         echo -e "oops incorrect...\n" 
     fi
     NUM=$NUM-1
 done
-rm -r testing_script
+
