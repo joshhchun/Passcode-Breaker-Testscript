@@ -15,7 +15,6 @@ class Pair:
     def canAfter(self, password) -> bool:
         return self.i <= len(password) - 3
 
-
 def generatePairs(string) -> Iterable[Pair]:
     n = len(string)
     for i in range(n - 1):
