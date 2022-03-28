@@ -16,7 +16,8 @@ for i in $(seq 15); do
     TESTPROG=$(cat $OUT | head -n 1)
     MYPROG=$(./exe/PC07 $TEST)
 
-    echo "$MYPROG"; echo "$TESTPROG"
+     echo "Your program cracked password: $MYPROG"
+     echo "Correct cracked password: $TESTPROG"
     if [[ "$MYPROG" == "$TESTPROG" ]]; then
         echo -e "CORRECT!\n"
     else 
