@@ -38,7 +38,8 @@ def buildTriplets(pairs, password) -> Iterable[tuple]:
             letter = random.choice(password[pair.i + 2:])
             yield (pair.a, pair.b, letter)
 
-password = [str(x) for x in range(random.choice(range(6, 10)))]
+length = random.choice(6,11)
+password = [str(x) for x in range(length)]
 
 random.shuffle(password)
 pairs = generatePairs(password)
