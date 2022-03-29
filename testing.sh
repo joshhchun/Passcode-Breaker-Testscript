@@ -14,7 +14,7 @@ chmod +x TEST_PC07
 cat testing_script/test.zip >> TEST_PC07
 
 for i in $(seq 15); do
-    ./TEST > $OUT 
+    ./TEST_PC07 > $OUT 
     cat $OUT | tail -n+2 > $TEST
     TESTPROG=$(cat $OUT | head -n 1)
     MYPROG=$(./exe/PC07 $TEST)
