@@ -12,7 +12,7 @@ chmod +x ./testing_script/test.py
 
 for i in $(seq 15); do
     ./testing_script/test.py > $OUT 
-    cat $OUT | tail -n 9 > $TEST
+    cat $OUT | tail -n+2 > $TEST
     TESTPROG=$(cat $OUT | head -n 1)
     MYPROG=$(./exe/PC07 $TEST)
 
