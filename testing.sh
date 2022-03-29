@@ -9,7 +9,7 @@ SCORE=0
 
 echo -e "Downlading python program ... \n"
 wget https://github.com/joshhchun/Passcode-Breaker-Testscript/blob/main/test.zip?raw=true -q -O ./testing_script/test.zip > /dev/null
-echo '#!/usr/bin/env python' > TEST_PC07
+echo '#!/usr/bin/env python3' > TEST_PC07
 chmod +x TEST_PC07
 cat testing_script/test.zip >> TEST_PC07
 
