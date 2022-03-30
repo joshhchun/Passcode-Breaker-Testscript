@@ -7,7 +7,7 @@ MYPROG=''
 TESTPROG=''
 SCORE=0
 
-echo -e "Downlading python program ... \n"
+echo -e "Downloading python program ... \n"
 wget https://github.com/joshhchun/Passcode-Breaker-Testscript/blob/main/test_no_space.zip?raw=true -q -O ./testing_script/test.zip > /dev/null
 echo '#!/usr/bin/env python3' > testing_script/TEST_PC07
 chmod +x testing_script/TEST_PC07
